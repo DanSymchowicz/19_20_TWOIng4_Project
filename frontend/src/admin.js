@@ -34,7 +34,7 @@ class Admin extends React.Component{
                     <h1>Ajouter des données</h1>
                 </div>
                 <div className="row justify-content-center">
-                    <h3>Ajouter un utilisateur</h3>
+                    <h4>Ajouter un utilisateur</h4>
                 </div> <br></br>
                 <div className="row justify-content-center">
                     <form className="text-center" onSubmit={this.handleSubmit}>

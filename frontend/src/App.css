@@ -83,3 +83,11 @@ h4{
 	border-radius:50%;
 	color:#555;
 }
+
+form{
+  
+  background-color: rgb(247, 245, 245);
+  border: 0,5px solid;
+  width: 500px;
+  height: 300px;
+}
