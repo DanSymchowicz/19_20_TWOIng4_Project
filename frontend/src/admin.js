@@ -5,14 +5,14 @@ class Admin extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            value:"",
+            pays:"",
             taille:"",
             nb:0
         }
     }
 
     handleChange_nom = (event) => {
-        this.setState({value: event.target.value});
+        this.setState({pays: event.target.value});
     }
 
     handleChange_taille = (event) => {
@@ -23,7 +23,7 @@ class Admin extends React.Component{
     }
     
     handleSubmit = (event) => {
-    alert('Le nouvel utilisateur a été soumis : pays : ' + this.state.value +' maison de la taille de ' + this.state.taille +' accueillant '+this.state.taille+' personnes.');
+    alert('Le nouvel utilisateur a été soumis : pays = ' + this.state.pays +' // taille de la maison = ' + this.state.taille +' // accueillant = '+this.state.nb+' personnes.');
     event.preventDefault();
     }
 
@@ -61,8 +61,31 @@ class Admin extends React.Component{
                         
                         <input type="submit" value="Enregistrer" />
                     </form>
+                    </div>
+                    <br></br>
+                    
+                    <div className="row justify-content-center">
+                    <h4>Utilisateurs existants :</h4>
+                    <br></br><br></br>
+                    <table className="table table-bordered table-striped table-sm table-hover">
+                        <thead className="thead-dark">
+                            <tr>
+                                <th>Pays</th>
+                                <th>Taille</th>
+                                <th>Nombre de personne</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className="text-center">{this.state.pays}</td>
+                                <td className="text-center">{this.state.taille}</td>
+                                <td className="text-center">{this.state.nb}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
 
-                </div>
+                
             </div>
 
 

@@ -42,24 +42,32 @@ class Albums extends React.Component{
                 <h4 className="text-center">Albums sortis cette semaine</h4> <br></br>
                 <div className="row justify-content-center">
                     <div className="col-sm-2">
+                    <div className="zoom">
                         <p className="text-center">{this.state.album1.name}</p>
                         <p className="artiste text-center">{this.state.album1.artiste}</p>
                         <img src={this.state.album1.img} width="90" height="90"></img>
                     </div>
+                    </div>
                     <div className="col-sm-2">
+                    <div className="zoom">
                         <p className="text-center">{this.state.album2.name}</p>
                         <p className="artiste text-center">{this.state.album2.artiste}</p>
                         <img src={this.state.album2.img} width="90" height="90"></img>
                     </div>
+                    </div>
                     <div className="col-sm-2">
+                    <div className="zoom">
                         <p className="text-center">{this.state.album3.name}</p>
                         <p className="artiste text-center">{this.state.album3.artiste}</p>
                         <img src={this.state.album3.img} width="90" height="90"></img>
                     </div>
+                    </div>
                     <div className="col-sm-2">
+                    <div className="zoom">
                         <p className="text-center">{this.state.album4.name}</p>
                         <p className="artiste text-center">{this.state.album4.artiste}</p>
                         <img src={this.state.album4.img} width="90" height="90"></img>
+                    </div>
                     </div>
                     <div className="col-sm-2">
                         <div className="zoom">
