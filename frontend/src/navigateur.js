@@ -8,7 +8,7 @@ class Navigateur extends React.Component{
             accueil : "actif",
             admin : null
         };
-
+        
     }
     render(){
         return(
