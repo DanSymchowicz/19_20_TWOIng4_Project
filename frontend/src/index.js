@@ -4,7 +4,6 @@ import {BrowserRouter} from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-<<<<<<< HEAD
 ReactDOM.render(
 
     <BrowserRouter>
@@ -12,8 +11,5 @@ ReactDOM.render(
     </BrowserRouter>, 
     
 document.getElementById('root'));
-=======
-ReactDOM.render(<App/>, document.getElementById('root'));
->>>>>>> feature/page
 
 serviceWorker.unregister();

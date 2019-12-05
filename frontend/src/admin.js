@@ -1,24 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-<<<<<<< HEAD
-import Dashboard from './dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Camembert from './camembert';
 
-class Admin extends Component{
-render(){
-  return(
-   
-    <div > 
-      
-        <p>On est dans le mode admin</p>
 
-    </div>
-  )
-}
-}
-export default Admin;
-=======
 
 class Admin extends React.Component{
     constructor(props){
@@ -118,4 +102,3 @@ export default Admin;
 
 
 
->>>>>>> feature/page

@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-<<<<<<< HEAD
-import Dashboard from './dashboard';
-=======
-import Navigateur from './navigateur';
->>>>>>> feature/page
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
 import Routes from './routes'; 
@@ -14,7 +9,7 @@ class App extends Component{
 render(){
   return(
    
-<<<<<<< HEAD
+
     <div className = "container-fluid" > 
        
       <div className = "row">
@@ -33,22 +28,8 @@ render(){
       </div>
 
     </div>
-  )
-}
-=======
-    <div className = "container-fluid" style={{
-      backgroundColor: '#FC0C0C0',
-      width: '100%',
-      height: '200%'
-    }}> 
-      <div className="row justify-content-center">
-      <Navigateur/>
-      </div>
-      
-    </div>
+
   );
   }
-
->>>>>>> feature/page
 }
 export default App;
