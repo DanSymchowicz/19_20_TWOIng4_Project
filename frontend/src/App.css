@@ -1,74 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
-
-.navigateur{
-  margin-top: 100px;
-  margin-left: 60px;
-  height: 100%;
-  width: 150px;
-  
-  border: #282c34;
-  height: 100%;
-}
 
 .container-fluid{
-  background-color: rgb(221, 221, 221);
-  border: 0,5px solid;
-}
-
-.dashboard{
-  color: #4d4d4d;
-  border-left: 1px solid;
-}
-
-.nb_h{
-  margin-left: 5%;
+  background-color: rgb(243, 243, 243);
+  font-family: 'Verdana';
 }
 
 .row{
   margin-bottom: 4%;
 }
 
-h4{
+h1{
+  font-weight: bold;
   text-decoration: underline;
 }
 
-.artiste{
+.pays{
   font-style: italic;
   font-size: small;
 }
 
+.country{
+  font-weight: bold;
+  font-size:large;
+}
+
+.img_pays{
+  margin-left:25%;
+  margin-bottom: 20px;
+}
+
 .zoom img:hover{
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
 }
 
-.album {
-  width: 110%;
-  height: 110%;
+.div_pays {
+  width: 150%;
+  height: 150%;
 }
 
-.accueil{
+.bouton{
   width:85px;
 	height:85px;
 	background:#fafafa;
@@ -76,33 +46,40 @@ h4{
 	font:bold 13px Arial;
 	border-radius:50%;
   color:#555;
+  margin-top: 40px;
 }
 
-.admin{
-
-  width:85px;
-	height:85px;
-	background:#fafafa;
-	box-shadow:2px 2px 8px #aaa;
-	font:bold 13px Arial;
-	border-radius:50%;
-	color:#555;
+.chart{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  box-shadow:2px 2px 8px #aaa;
+  background:#fafafa;
+  border-radius: 5%;
 }
 
-.camembert{
-  float: top;
-  border: 1px solid;
+.element{
+  margin-right: 15px;
+  margin-left: 15px;
 }
-
-
 
 .tableau_cont{
-  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-form{
-  
-  background-color: rgb(247, 245, 245);
-  border: 0,5px solid;
-  width: 500px;
-  height: 300px;
+
+.ajout{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  box-shadow:2px 2px 8px #aaa;
+  background:#fafafa;
+  border-radius: 5%;
+}
+.tableau{
+  margin-top: 10px;
+  box-shadow:2px 2px 8px #aaa;
+  background:#fafafa;
+  border-radius: 5%;
+  width: 55%;
 }

@@ -54,7 +54,8 @@ class Tableau extends React.Component{
 
     render(){
         return(
-            <div className="tableau_cont">
+            <div className="tableau">
+                    <br></br>
                   <h4 className="text-center">
                         Mesures records de la semaine
                     </h4> <br></br>
@@ -133,6 +134,8 @@ class Tableau extends React.Component{
                 </tbody>
 
                 </table>
+
+               
             </div>
 
         )

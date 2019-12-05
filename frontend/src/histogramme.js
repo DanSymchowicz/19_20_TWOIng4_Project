@@ -24,10 +24,12 @@ class Histogramme extends React.Component{
     render(){
         
         return(
-            <div className="camembert">
+            <div className="chart">
+                <br></br>
                 <h4 className="text-center">Évolution Taux d'humidité</h4>
                 <h4 className="text-center">de la semaine</h4> <br></br>
-                <Chart options={this.state.options} labels={this.state.labels} series={this.state.series} width="350" type="bar" />
+                <Chart className="element" options={this.state.options} labels={this.state.labels} series={this.state.series} width="350" type="bar" />
+                <br></br>
             </div>
         )
     }

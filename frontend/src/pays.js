@@ -42,55 +42,60 @@ class Pays extends React.Component{
     render(){
         return(
 
-            <div className="album">
+            <div className="div_pays">
                 <div className="container-fluid">
 
                 <h4 className="text-center">Albums sortis cette semaine</h4> <br></br>
 
                 <div className="row justify-content-center">
 
-                    <div className="col-sm-2">
+                    <div className="chart col-sm-2">
                     <div className="zoom">
-                        <p className="text-center">{this.state.pays1.pays}</p>
-                        <p className="artiste text-center">{this.state.pays1.nb_prs} personnes</p>
-                        <p className="text-center">Taille maison :{this.state.pays1.house_size}</p>
-                        <img src={this.state.pays1.img} width="90" height="90"></img>
+                        <br></br>
+                        <p className="country text-center">{this.state.pays1.pays}</p>
+                        <p className="pays text-center">{this.state.pays1.nb_prs} personnes</p>
+                        <p className="text-center">Taille: {this.state.pays1.house_size}</p>
+                        <img className="img_pays" src={this.state.pays1.img} width="90" height="90"></img>
                     </div>
                     </div>
 
-                    <div className="col-sm-2">
+                    <div className="chart col-sm-2">
                     <div className="zoom">
-                        <p className="text-center">{this.state.pays2.pays}</p>
-                        <p className="artiste text-center">{this.state.pays2.nb_prs} personnes</p>
-                        <p className="text-center">Taille maison :{this.state.pays2.house_size}</p>
-                        <img src={this.state.pays2.img} width="90" height="90"></img>
+                        <br></br>
+                        <p className="country text-center">{this.state.pays2.pays}</p>
+                        <p className="pays text-center">{this.state.pays2.nb_prs} personnes</p>
+                        <p className="text-center">Taille: {this.state.pays2.house_size}</p>
+                        <img className="img_pays" src={this.state.pays2.img} width="90" height="90"></img>
                     </div>
                     </div>
 
-                    <div className="col-sm-2">
+                    <div className="chart col-sm-2">
                     <div className="zoom">
-                        <p className="text-center">{this.state.pays3.pays}</p>
-                        <p className="artiste text-center">{this.state.pays3.nb_prs} personnes</p>
-                        <p className="text-center">Taille maison :{this.state.pays3.house_size}</p>
-                        <img src={this.state.pays3.img} width="90" height="90"></img>
+                        <br></br>
+                        <p className="country text-center">{this.state.pays3.pays}</p>
+                        <p className="pays text-center">{this.state.pays3.nb_prs} personnes</p>
+                        <p className="text-center">Taille: {this.state.pays3.house_size}</p>
+                        <img className="img_pays" src={this.state.pays3.img} width="90" height="90"></img>
                     </div>
                     </div>
 
-                    <div className="col-sm-2">
+                    <div className="chart col-sm-2">
                     <div className="zoom">
-                        <p className="text-center">{this.state.pays4.pays}</p>
-                        <p className="artiste text-center">{this.state.pays4.nb_prs} personnes</p>
+                        <br></br>
+                        <p className="country text-center">{this.state.pays4.pays}</p>
+                        <p className="pays text-center">{this.state.pays4.nb_prs} personnes</p>
                         <p className="text-center">Taille: {this.state.pays4.house_size}</p>
-                        <img src={this.state.pays4.img} width="90" height="90"></img>
+                        <img className="img_pays" src={this.state.pays4.img} width="90" height="90"></img>
                     </div>
                     </div>
 
-                    <div className="col-sm-2">
+                    <div className="chart col-sm-2">
                     <div className="zoom">
-                        <p className="text-center">{this.state.pays5.pays}</p>
-                        <p className="artiste text-center">{this.state.pays5.nb_prs} personnes</p>
-                        <p className="text-center">Taille maison :{this.state.pays5.house_size}</p>
-                        <img src={this.state.pays5.img} width="90" height="90"></img>
+                        <br></br>
+                        <p className="country text-center">{this.state.pays5.pays}</p>
+                        <p className="pays text-center">{this.state.pays5.nb_prs} personnes</p>
+                        <p className="text-center">Taille: {this.state.pays5.house_size}</p>
+                        <img className="img_pays" src={this.state.pays5.img} width="90" height="90"></img>
                     </div>
                     </div>
 

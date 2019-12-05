@@ -32,11 +32,18 @@ class Admin extends React.Component{
 
     render(){
         return(
+
             <div className="page_admin">
+                <div className="container">
                 <div className="row justify-content-center">
                     <h1>Ajouter des données</h1>
+                    <br></br>
                 </div>
+                </div>
+                <div className="ajout">
+                <div className="container">
                 <div className="row justify-content-center">
+                    <br></br>
                     <h4>Ajouter un utilisateur</h4>
                 </div> <br></br>
                 <div className="row justify-content-center">
@@ -66,7 +73,12 @@ class Admin extends React.Component{
                     </form>
                     </div>
                     <br></br>
-                    
+                    </div>
+                    </div>
+
+
+                    <br></br>
+                    <div className="container">
                     <div className="row justify-content-center">
                     <h4>Utilisateurs existants :</h4>
                     <br></br><br></br>
@@ -86,6 +98,7 @@ class Admin extends React.Component{
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                     </div>
 
                 

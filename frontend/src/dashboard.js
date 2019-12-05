@@ -15,8 +15,8 @@ class Dashboard extends React.Component{
     }
     render(){
         return(
-            <div className="dashboard">
-                <div className="container-fluid">
+        
+                <div className="dashboard container-fluid">
 
                     <div className="row">
                     <h1 className="col-12 text-center">Dashboard</h1> 
@@ -27,6 +27,11 @@ class Dashboard extends React.Component{
                         <Histogramme className="col-4"/> 
                         <Graphe className="col-4"/>
                     </div>
+
+                    <div className="row justify-content-md-center">
+                        <Pays className="col-12"/>
+                    </div>
+                    
                     <div className="row justify-content-md-center">
         
                         <Compteur className="col-12"/> <br></br> 
@@ -35,12 +40,9 @@ class Dashboard extends React.Component{
                     <div className="row justify-content-md-center">
                         <Tableau className="col-12"/>
                     </div>
-                    <div className="row justify-content-md-center">
-                        <Pays className="col-12"/>
-                    </div>
 
                 </div>
-            </div>
+          
         )
     }
 }
