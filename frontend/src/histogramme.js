@@ -8,7 +8,7 @@ class Histogramme extends React.Component{
         this.state={
             
             series: [{
-                name: 'Nombre écoute',
+                name: 'Taux humidité',
                 data: [130,120 ,30 ,60 ,120,100,200 ]
               }],
 
@@ -25,7 +25,7 @@ class Histogramme extends React.Component{
         
         return(
             <div className="camembert">
-                <h4 className="text-center">Répartition des écoutes</h4>
+                <h4 className="text-center">Évolution Taux d'humidité</h4>
                 <h4 className="text-center">de la semaine</h4> <br></br>
                 <Chart options={this.state.options} labels={this.state.labels} series={this.state.series} width="350" type="bar" />
             </div>

@@ -5,41 +5,48 @@ class Tableau extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            artiste1:{
-                name:"Kid Cudi",
-                morceaux:"Mr Rager",
-                nb_ecoute:6300,
-                genre: "Rap",
-                img:"mrrager_kidcudi.jpg"
+            mesure1:{
+                date:"12-12-18",
+                type:"Humidité",
+                mesure:300,
+                unite: "g/m3",
+                img:"cpt_humidity.jpg"
             },
-            artiste2:{
-                name:"France Gall",
-                morceaux:"Il jouait du piano debout",
-                nb_ecoute:5200,
-                genre: "Pop",
-                img:"franceg_p.jpg"
+            mesure2:{
+                date:"2-10-19",
+                type:"Humidité",
+                mesure:280,
+                unite: "g/m3",
+                img:"cpt_humidity.jpg"
             },
-            artiste3:{
-                name:"Rihanna",
-                morceaux:"Rude Boy",
-                nb_ecoute:4800,
-                genre: "Rnb",
-                img:"rudeboy_rihanna.jpg"
+            mesure3:{
+                date:"3-12-19",
+                type:"Température",
+                mesure:24,
+                unite: "°C",
+                img:"cpt_temp.jpg"
             },
-            artiste4:{
-                name:"Damso",
-                morceaux:"Ipséité",
-                nb_ecoute:4200,
-                genre: "Rap",
-                img:"ispeite_damso.jpg"
+            mesure4:{
+                date:"18-10-19",
+                type:"Température",
+                mesure:30,
+                unite: "°C",
+                img:"cpt_temp.jpg"
             },
-            artiste5:{
-                name:"Ray Charles",
-                morceaux:"Hit That Road Jack",
-                nb_ecoute:3800,
-                genre: "Jazz",
-                img:"raycharles_hit.jpg"
-            }
+            mesure5:{
+                date:"22-11-19",
+                type:"Pollution de l'air",
+                mesure:290,
+                unite: "ppm",
+                img:"cpt_pollution.jpg"
+            },
+            mesure6:{
+                date:"30-11-19",
+                type:"Pollution de l'air",
+                mesure:450,
+                unite: "ppm",
+                img:"cpt_pollution.jpg"
+            },
         };
     }
 
@@ -49,73 +56,77 @@ class Tableau extends React.Component{
         return(
             <div className="tableau_cont">
                   <h4 className="text-center">
-                        Artistes de la semaine
+                        Mesures records de la semaine
                     </h4> <br></br>
                 <table className="table table-bordered table-striped table-sm table-hover">
                 <thead className="thead-dark">
                     <tr>
-                        <th>#</th>
-                        <th>Nom</th>
-                        <th>Morceau</th>
-                        <th>Nombre d'écoute</th>
-                        <th>Genre</th>
+                        <th>Date mesure</th>
+                        <th>Type de capteur</th>
+                        <th>Mesure</th>
+                        <th>Unité</th>
                         <th>Image</th>
                     </tr>
                 </thead>
                 <tbody>
 
                     <tr>
-                    <td className="text-center">1</td>
-                    <td className="text-center">{this.state.artiste1.name}</td>
-                    <td className="text-center">{this.state.artiste1.morceaux}</td>
-                    <td className="text-center">{this.state.artiste1.nb_ecoute}</td>
-                    <td className="text-center">{this.state.artiste1.genre}</td>
+                    <td className="text-center">{this.state.mesure1.date}</td>
+                    <td className="text-center">{this.state.mesure1.type}</td>
+                    <td className="text-center">{this.state.mesure1.mesure}</td>
+                    <td className="text-center">{this.state.mesure1.unite}</td>
                     <td>
-                        <img src={this.state.artiste1.img} width="70" height="70"></img>
+                        <img src={this.state.mesure1.img} width="70" height="70"></img>
                     </td>
                     </tr>
 
                     <tr>
-                    <td className="text-center">2</td>
-                    <td className="text-center">{this.state.artiste2.name}</td>
-                    <td className="text-center">{this.state.artiste2.morceaux}</td>
-                    <td className="text-center">{this.state.artiste2.nb_ecoute}</td>
-                    <td className="text-center">{this.state.artiste2.genre}</td>
+                    <td className="text-center">{this.state.mesure2.date}</td>
+                    <td className="text-center">{this.state.mesure2.type}</td>
+                    <td className="text-center">{this.state.mesure2.mesure}</td>
+                    <td className="text-center">{this.state.mesure2.unite}</td>
                     <td>
-                        <img src={this.state.artiste2.img} width="70" height="70"></img>
+                        <img src={this.state.mesure2.img} width="70" height="70"></img>
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                    <td className="text-center">{this.state.mesure3.date}</td>
+                    <td className="text-center">{this.state.mesure3.type}</td>
+                    <td className="text-center">{this.state.mesure3.mesure}</td>
+                    <td className="text-center">{this.state.mesure3.unite}</td>
+                    <td>
+                        <img src={this.state.mesure3.img} width="70" height="70"></img>
                     </td>
                     </tr>
 
                     <tr>
-                    <td className="text-center">3</td>
-                    <td className="text-center">{this.state.artiste3.name}</td>
-                    <td className="text-center">{this.state.artiste3.morceaux}</td>
-                    <td className="text-center">{this.state.artiste3.nb_ecoute}</td>
-                    <td className="text-center">{this.state.artiste3.genre}</td>
+                    <td className="text-center">{this.state.mesure4.date}</td>
+                    <td className="text-center">{this.state.mesure4.type}</td>
+                    <td className="text-center">{this.state.mesure4.mesure}</td>
+                    <td className="text-center">{this.state.mesure4.unite}</td>
                     <td>
-                        <img src={this.state.artiste3.img} width="70" height="70"></img>
+                        <img src={this.state.mesure4.img} width="70" height="70"></img>
                     </td>
                     </tr>
 
                     <tr>
-                    <td className="text-center">4</td>
-                    <td className="text-center">{this.state.artiste4.name}</td>
-                    <td className="text-center">{this.state.artiste4.morceaux}</td>
-                    <td className="text-center">{this.state.artiste4.nb_ecoute}</td>
-                    <td className="text-center">{this.state.artiste4.genre}</td>
+                    <td className="text-center">{this.state.mesure5.date}</td>
+                    <td className="text-center">{this.state.mesure5.type}</td>
+                    <td className="text-center">{this.state.mesure5.mesure}</td>
+                    <td className="text-center">{this.state.mesure5.unite}</td>
                     <td>
-                        <img src={this.state.artiste4.img} width="70" height="70"></img>
+                        <img src={this.state.mesure5.img} width="70" height="70"></img>
                     </td>
                     </tr>
 
                     <tr>
-                    <td className="text-center">5</td>
-                    <td className="text-center">{this.state.artiste5.name}</td>
-                    <td className="text-center">{this.state.artiste5.morceaux}</td>
-                    <td className="text-center">{this.state.artiste5.nb_ecoute}</td>
-                    <td className="text-center">{this.state.artiste5.genre}</td>
+                    <td className="text-center">{this.state.mesure6.date}</td>
+                    <td className="text-center">{this.state.mesure6.type}</td>
+                    <td className="text-center">{this.state.mesure6.mesure}</td>
+                    <td className="text-center">{this.state.mesure6.unite}</td>
                     <td>
-                        <img src={this.state.artiste5.img} width="70" height="70"></img>
+                        <img src={this.state.mesure6.img} width="70" height="70"></img>
                     </td>
                     </tr>
 

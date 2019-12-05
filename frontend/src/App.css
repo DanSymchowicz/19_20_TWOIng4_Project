@@ -22,11 +22,16 @@
 }
 
 .navigateur{
+<<<<<<< HEAD
   margin-top: 100px;
   margin-left: 60px;
   height: 100%;
   width: 150px;
   
+=======
+  border: #282c34;
+  height: 100%;
+>>>>>>> feature/page
 }
 
 .container-fluid{
@@ -36,8 +41,12 @@
 
 .dashboard{
   color: #4d4d4d;
+<<<<<<< HEAD
   border-left: 1px solid;
+=======
+>>>>>>> feature/page
 }
+
 .nb_h{
   margin-left: 5%;
 }
@@ -86,6 +95,7 @@ h4{
 	color:#555;
 }
 
+<<<<<<< HEAD
 .camembert{
   float: top;
   border: 1px solid;
@@ -96,3 +106,12 @@ h4{
 .tableau_cont{
   width: 50%;
 }
+=======
+form{
+  
+  background-color: rgb(247, 245, 245);
+  border: 0,5px solid;
+  width: 500px;
+  height: 300px;
+}
+>>>>>>> feature/page
