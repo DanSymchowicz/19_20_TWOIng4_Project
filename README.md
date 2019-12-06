@@ -1,3 +1,13 @@
+Dashboard de :
+
+-> Thomas MEURIN
+-> Dan SYMCHOWICZ
+-> Jade LAVILLE
+
+OCRES2
+
+Utilisation de la library Apex Chart. 
+
 # Projet de fin de semestre
 
 A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
