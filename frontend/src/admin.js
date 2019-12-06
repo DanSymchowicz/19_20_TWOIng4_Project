@@ -36,6 +36,7 @@ class Admin extends React.Component{
             <div className="page_admin">
                 <div className="container">
                 <div className="row justify-content-center">
+                <br></br>
                     <h1>Ajouter des données</h1>
                     <br></br>
                 </div>

@@ -11,6 +11,11 @@
 h1{
   font-weight: bold;
   text-decoration: underline;
+  color:#474747;
+}
+
+h4{
+  color:#474747;
 }
 
 .pays{
@@ -47,6 +52,7 @@ h1{
 	border-radius:50%;
   color:#555;
   margin-top: 40px;
+  margin-left: 30px;
 }
 
 .chart{
@@ -81,5 +87,11 @@ h1{
   box-shadow:2px 2px 8px #aaa;
   background:#fafafa;
   border-radius: 5%;
+  font-family: 'Verdana';
+  color:#474747;
+  font-size: small;
   width: 55%;
+  height: 45%;
+
 }
+

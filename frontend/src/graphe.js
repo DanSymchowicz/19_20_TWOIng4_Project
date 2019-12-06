@@ -37,7 +37,7 @@ class Graphe extends React.Component{
         return(
             <div className="chart">
                 <br></br>
-                <h4 className="text-center">Evolution des </h4>
+                <h4 className="text-center">Évolution des </h4>
                 <h4 className="text-center">mesures</h4> 
                 <Chart className="element" options={this.state.options} labels={this.state.labels} series={this.state.series} type="line" width="450" />
                 <br></br>

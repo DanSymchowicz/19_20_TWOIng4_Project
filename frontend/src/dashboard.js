@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Compteur from './compteur';
 import Camembert from './camembert';
 import Histogramme from './histogramme';
 import Graphe from './graphe';
 import Tableau from './tableau';
-import Pays from './pays';
+import RadarChart from './radar';
+import RadialChart from './radialbar';
 
 
 class Dashboard extends React.Component{
@@ -29,14 +29,10 @@ class Dashboard extends React.Component{
                     </div>
 
                     <div className="row justify-content-md-center">
-                        <Pays className="col-12"/>
+                        <RadialChart className="col-6"/>
+                        <RadarChart className="col-6"/> 
                     </div>
-                    
-                    <div className="row justify-content-md-center">
-        
-                        <Compteur className="col-12"/> <br></br> 
-                      
-                    </div>
+
                     <div className="row justify-content-md-center">
                         <Tableau className="col-12"/>
                     </div>
