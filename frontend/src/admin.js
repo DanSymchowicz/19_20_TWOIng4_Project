@@ -38,7 +38,6 @@ class Admin extends React.Component{
 
     componentDidMount (){
         var lui=this;
-        console.log("HELLO");
        
         axios.get(`http://127.0.0.1:3000/user/`).then(function (response) {
             // handle success
