@@ -8,6 +8,8 @@ OCRES2
 
 Utilisation de la library Apex Chart. 
 
+# Pour des soucis de rebase sur le master (par peur d'écraser notre travail 5 min avant le rendu) le code finit se trouve au niveau de la branche feature/back_1. Désolés pour cela.
+
 Loom de notre front : https://www.loom.com/share/e17dd2e3866c496db98bf7390aeadd8c
 
 trello link : https://trello.com/invite/b/c7IEmfOs/4613fbe3bf69cc948b401aaa394f0b4e/projet-dashboard
