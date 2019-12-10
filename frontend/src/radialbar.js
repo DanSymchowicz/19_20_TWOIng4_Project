@@ -32,7 +32,7 @@ class RadialChart extends React.Component {
             }
           },
           colors: ['#4A90E2','#FD95FF','#F8CD1C', '#42CE20'],
-          labels: ['France', 'Grèce', 'Espagne', 'Italy'],
+          labels: ['LivingRoom', 'BathRoom', 'BedRoom', 'Entrance'],
           legend: {
             show: true,
             fontSize: '15px',
@@ -66,8 +66,8 @@ class RadialChart extends React.Component {
 
         <div className="chart">
             <br></br>
-            <h4 className="text-center">Nombre utilisateurs</h4>
-            <h4 className="text-center">par pays</h4>
+            <h4 className="text-center">Placement des capteurs</h4>
+            <h4 className="text-center">dans la maison</h4>
             <br></br>
           <Chart className="element" options={this.state.options} series={this.state.series} type="radialBar" height="350" />
         </div>

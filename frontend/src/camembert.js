@@ -27,7 +27,7 @@ class Camembert extends React.Component{
             <div className="chart">
                 <br></br>
                 <h4 className="text-center">Répartition des types</h4>
-                <h4 className="text-center"> de capteur</h4> <br></br>
+                <h4 className="text-center"> de mesures</h4> <br></br>
                 <Chart className="element" options={this.state.options} labels={this.state.labels} series={this.state.series} type="donut" />
                 <br></br>
             </div>

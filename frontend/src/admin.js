@@ -86,6 +86,7 @@ class Admin extends React.Component{
     handleChange_taille = (event) => {
         this.setState({taille: event.target.value});
     }
+
     handleChange_nb = (event) => {
         this.setState({nombre: event.target.value});
     }
@@ -96,6 +97,7 @@ class Admin extends React.Component{
             houseSize:this.state.taille,
             personsInHouse:this.state.nombre,
         }
+        console.log(newUser);
         axios.post(`http://127.0.0.1:3000/user/add`,{newUser}).then(function (response) {
             // handle success
                 console.log("on vient de le mettre dans la bdd")

@@ -9,11 +9,11 @@ class Histogramme extends React.Component{
             
             series: [{
                 name: 'Taux humidité',
-                data: [130,120 ,30 ,60 ,120,100,200 ]
+                data: [130,100,200 ]
               }],
 
             options: {
-                labels: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi','Vendredi','Samedi','Dimanche'],
+                labels: ['Humidité','Température','Pollution'],
                 legend: {
                 position: 'bottom'
                 }
@@ -26,8 +26,8 @@ class Histogramme extends React.Component{
         return(
             <div className="chart">
                 <br></br>
-                <h4 className="text-center">Évolution Taux d'humidité</h4>
-                <h4 className="text-center">de la semaine</h4> <br></br>
+                <h4 className="text-center">Moyenne des valeurs</h4>
+                <h4 className="text-center">enregistrées</h4> <br></br>
                 <Chart className="element" options={this.state.options} labels={this.state.labels} series={this.state.series} width="350" type="bar" />
                 <br></br>
             </div>

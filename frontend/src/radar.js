@@ -17,7 +17,7 @@ class RadarChart extends React.Component {
               top: 1
             },
           },
-          labels: ['kitchen', 'livingRoom', 'bedroom', 'bathroom', 'entrance', 'general'],
+          labels: ['Big', 'Medium', 'Small'],
           stroke: {
             width: 0
           },
@@ -30,13 +30,13 @@ class RadarChart extends React.Component {
         },
         series: [{
             name: 'Température',
-            data: [80, 50, 30, 40, 100, 20],
+            data: [80, 50, 30],
         }, {
             name: 'Humidité',
-            data: [20, 30, 40, 80, 20, 80],
+            data: [20, 30, 40],
         }, {
             name: 'Pollution air',
-            data: [44, 76, 78, 13, 43, 10],
+            data: [44, 76, 78],
         }]
       }
     }
@@ -47,8 +47,8 @@ class RadarChart extends React.Component {
 
           <div className="chart">
               <br></br>
-            <h4 className="text-center">Répartition des données</h4>
-            <h4 className="text-center">par pièce</h4>
+            <h4 className="text-center">Répartition des tailles de</h4>
+            <h4 className="text-center">pièce parmis les users</h4>
             <br></br>
             <Chart className="element" options={this.state.options} series={this.state.series} type="radar" height="320" width="320"/>
           </div>
