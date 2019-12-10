@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import axios from "axios";
 
 class Admin extends React.Component{
     constructor(props){
@@ -13,6 +12,12 @@ class Admin extends React.Component{
             nb:0
         }
     }
+
+    getUserPays (){
+        return axios
+    .get(`localhost:3000/user/5ddb94c6fc13ae640c000015/location`);
+    }
+
 
     handleChange_nom = (event) => {
         this.setState({pays: event.target.value});
@@ -93,7 +98,7 @@ class Admin extends React.Component{
                         </thead>
                         <tbody>
                             <tr>
-                                <td className="text-center">{this.state.pays}</td>
+                                <td className="text-center">{this.getUserPays}</td>
                                 <td className="text-center">{this.state.taille}</td>
                                 <td className="text-center">{this.state.nb}</td>
                             </tr>
